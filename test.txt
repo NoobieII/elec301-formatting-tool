@@ -1,0 +1,50 @@
+#Quick startup guide
+#comments begin with the pound symbol and continue until the end of the line
+
+#Setting page dimensions
+page_width = 850
+page_height = 1100
+
+#Setting the text boundaries
+#x coordinate of the text line beginning
+tx = 50
+#y coordinate of the first line of text
+ty = 50
+
+#Width and height of the text boundaries
+tw = 750
+th = 1000
+
+#Outputting text uses the text keyword and single-quoted strings
+text 'Hello World\n\r'
+
+#Note that \r has to be used to go back to the start of the line
+ty = 100
+tw = 100
+
+#For narrower lines of text, columns can be made. There is also a bold text feature.
+text bold 'Buses FOR THE WIN!\n\n\r'
+text '\tWell, there must be a reason why I\'m writing this. At a first glance it is counter intuitive to believe that it is a good thing '
+text 'to be spending so much time commuting while pursuing an engineering degree. Well, Ryan thinks otherwise... blah blah blah.'
+
+#Images can be loaded too but the image dimensions need to be kept on attention
+ix = 350
+iy = 100
+iw = 300
+ih = 300
+#This image doesn't exist so it is commented out.
+#image 'image_filename.png'
+
+#here images can be in the png, jpg, bmp, and probably a few other formats.
+
+tx = 200
+ty = 100
+tw = 500
+text bold 'Another example, taken straight from an RP on the internet\n\n\r'
+text 'Holy cleanser, Brother Charles points his flintlock pistol at the cage and fires. Within the cloud '
+text 'of smoke appeared a pool of blood, and it became clear that he shot him in the foot.\n\n\r'
+text '\"You two better hurry, Magna Deiectionem was announced... Practice if you want to just cleanse him quickly. We are moving to Prague soon...\"\n'
+
+#To run the program and convert this to the bitmap file, type ryan_format.exe test.txt in the command line in the current directory.
+
+#There must also be a trailing newline in these files
